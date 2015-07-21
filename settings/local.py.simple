@@ -1,0 +1,7 @@
+from base import *
+
+STATIC_URL = '/static/'
+
+MEDIA_URL = '/media/'
+
+IMG_CDN_URL = '/img/'
