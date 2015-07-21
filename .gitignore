@@ -69,3 +69,4 @@ local.txt
 production.py
 *.sqlite3
 .idea
+node_modules
