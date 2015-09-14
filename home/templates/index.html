@@ -1,7 +1,222 @@
-{% extends "base.html" %}
-
-{% block body %}
-
-<h1>Hello!</h1>
-
-{% endblock %}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>地铁帮</title>
+    <link rel="stylesheet" href="{{STATIC_URL}}home/css/tristram.min.css"/>
+    <style type="text/css">
+        .snw{background: url("{{STATIC_URL}}home/imgs/snw_bg.png") repeat;}
+        #footer{background: url("{{STATIC_URL}}home/imgs/footer_bg.png") repeat;}
+    </style>
+</head>
+<body>
+    <div id="header" class="clearfix">
+        <div class="content clearfix">
+            <div class="logo">
+                <img src="{{STATIC_URL}}home/imgs/logo.png"/>
+            </div>
+            <ul class="navs clearfix">
+                <li class="acitve">
+                    <a href="Javascript:void(0)">首页</a>
+                </li>
+                <li>
+                    <a href="Javascript:void(0)">网络</a>
+                </li>
+                <li>
+                    <a href="Javascript:void(0)">经验</a>
+                </li>
+                <li>
+                    <a href="Javascript:void(0)">社交</a>
+                </li>
+                <li>
+                    <a href="Javascript:void(0)">关于我们</a>
+                </li>
+            </ul>
+            <div>
+                <a href="Javascript:void(0)" class="login">登录</a>
+                <a href="Javascript:void(0)" class="register">注册</a>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <section class="banner">
+            <img src="{{STATIC_URL}}home/imgs/dsp_0.jpg" />
+            <div class="content">
+                <h1>SNBWAY</h1>
+                <h2>世界第一个地下王国从此开始</h2>
+                <h4>为地铁一族提供网络共享、交友、</h4>
+                <h4>换乘经验分享等服务</h4>
+                <p class="apply">
+                    <a href="Javascript:void(0)" class="btn_blue">申请加入</a>
+                </p>
+            </div>
+        </section>
+        <section class="snw">
+            <div class="content clearfix">
+                <img src="{{STATIC_URL}}home/imgs/dsp_1.png">
+                <div class="text">
+                    <h1>网络共享</h1>
+                    <h2>什么是SNW</h2>
+                    <h2>SNW <span>Share Network</span></h2>
+                    <p>共享网络，是一种把剩余流量共享给其他人并获得1.5+倍回报的机制，保证乘坐地铁全程在线。</p>
+                </div>
+            </div>
+        </section>
+        <section class="share">
+            <div class="content">
+                <h1 class="center">换乘技巧分享</h1>
+                <ul class="clearfix">
+                    <li>
+                        <img src="{{STATIC_URL}}home/imgs/share/quanqiu.png"/>
+                        <p>最短换乘距离</p>
+                    </li>
+                    <li>
+                        <img src="{{STATIC_URL}}home/imgs/share/yidong.png"/>
+                        <p>列车人员分布</p>
+                    </li>
+                    <li>
+                        <img src="{{STATIC_URL}}home/imgs/share/meiti.png"/>
+                        <p>最佳上/下车地点</p>
+                    </li>
+                    <li>
+                        <img src="{{STATIC_URL}}home/imgs/share/dingwei.png"/>
+                        <p>精准报站</p>
+                    </li>
+                    <li>
+                        <img src="{{STATIC_URL}}home/imgs/share/youhua.png"/>
+                        <p>最佳乘坐方案</p>
+                    </li>
+                    <li>
+                        <img src="{{STATIC_URL}}home/imgs/share/toufang.png"/>
+                        <p>经验分享</p>
+                    </li>
+                    <li>
+                        <img src="{{STATIC_URL}}home/imgs/share/tubiao.png"/>
+                        <p>地铁讯息提醒</p>
+                    </li>
+                </ul>
+                <p class="clearfix center">
+                    <a href="Javascript:void(0)" class="btn_blue">开始使用</a>
+                </p>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="content">
+                <h1 class="center">地下社交</h1>
+                <ul class="clearfix">
+                    <li>
+                        <img src="{{STATIC_URL}}home/imgs/contact/weizhi.png"/>
+                        <p>附近的人</p>
+                    </li>
+                    <li>
+                        <img src="{{STATIC_URL}}home/imgs/contact/shebei.png"/>
+                        <p>各种逗比段子</p>
+                    </li>
+                    <li>
+                        <img src="{{STATIC_URL}}home/imgs/contact/dingxiang.png"/>
+                        <p>基于位置的社交</p>
+                    </li>
+                    <li>
+                        <img src="{{STATIC_URL}}home/imgs/contact/dingxiang.png"/>
+                        <p>全平台覆盖</p>
+                    </li>
+                    <li>
+                        <img src="{{STATIC_URL}}home/imgs/contact/biaoqian.png"/>
+                        <p>用户标签</p>
+                    </li>
+                    <li>
+                        <img src="{{STATIC_URL}}home/imgs/contact/yunyingshang.png"/>
+                        <p>优质用户管理</p>
+                    </li>
+                    <li>
+                        <img src="{{STATIC_URL}}home/imgs/contact/wifi.png"/>
+                        <p>WIFE</p>
+                    </li>
+                    <li>
+                        <img src="{{STATIC_URL}}home/imgs/contact/shijian.png"/>
+                        <p>使用时间</p>
+                    </li>
+                </ul>
+                <p class="clearfix center">
+                    <a href="Javascript:void(0)" class="btn_black">开始使用</a>
+                </p>
+            </div>
+        </section>
+        <section class="beta">
+            <div class="content">
+                <h1 class="center">加入内测</h1>
+                <a href="Javascript:void(0)" class="btn_black">姓名</a>
+                <a href="Javascript:void(0)" class="btn_black">手机/邮箱</a>
+                <a href="Javascript:void(0)" class="btn_black">城市</a>
+            </div>
+        </section>
+        <section class="partner">
+            <div class="content">
+                <h1 class="center">合作伙伴</h1>
+                <a href="Javascript:void(0)" class="btn_gray">合作媒体</a>
+                <ul class="media clearfix">
+                    <li>
+                        <a href="Javascript:void(0)">
+                            <img src="{{STATIC_URL}}home/imgs/partner/36kr.png"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Javascript:void(0)">
+                            <img src="{{STATIC_URL}}home/imgs/partner/pw.png"/>
+                        </a>
+                    </li>
+                </ul>
+                <a href="Javascript:void(0)" class="btn_gray">技术合作平台</a>
+                <ul class="clearfix platform">
+                    <li>
+                        <a href="Javascript:void(0)">
+                            <img src="{{STATIC_URL}}home/imgs/partner/qiniu.png"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Javascript:void(0)">
+                            <img src="{{STATIC_URL}}home/imgs/partner/dp.png"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Javascript:void(0)">
+                            <img src="{{STATIC_URL}}home/imgs/partner/qing.png"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Javascript:void(0)">
+                            <img src="{{STATIC_URL}}home/imgs/partner/aliyun.png"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <div id="footer">
+        <ul class="clearfix content">
+            <li>
+                <a href="Javascript:void(0)">隐私政策</a>
+            </li>
+            <li>
+                <a href="Javascript:void(0)">服务条款</a>
+            </li>
+            <li>
+                <a href="Javascript:void(0)">关于我们</a>
+            </li>
+            <li>
+                <a href="Javascript:void(0)">联系我们</a>
+            </li>
+        </ul>
+        <p class="center copyright">© 2015地铁帮科技有限公司</p>
+        <p class="center">
+            <img src="{{STATIC_URL}}home/imgs/footer_logo.png"/>
+        </p>
+    </div>
+    <a href="Javascript:void(0)" class="back">
+        <img src="{{STATIC_URL}}home/imgs/back.png"/>
+    </a>
+    <script type="text/javascript" src="{{STATIC_URL}}plugins/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}home/js/tristram.min.js"></script>
+</body>
+</html>
