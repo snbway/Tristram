@@ -47,9 +47,9 @@ $ echo export DJANGO_SETTINGS_MODULE=settings.local>>~/.virtualenvs/tristram/bin
  $ ./manage.py runserver 0.0.0.0:8090
 ### 开始hack吧 ~ 骚年
  ```
- # Build Status
+## Build Status
  
- [![Build Status](https://travis-ci.org/quxiaolong1504/Tristram.svg?branch=master)](https://travis-ci.org/quxiaolong1504/Tristram)
+[![Build Status](https://travis-ci.org/quxiaolong1504/Tristram.svg?branch=master)](https://travis-ci.org/quxiaolong1504/Tristram)
 
  [1]: https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
